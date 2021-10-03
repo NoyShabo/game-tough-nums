@@ -3,8 +3,6 @@ var gLength = 36;
 var gNums = [];
 var gCurrNumCounter = 1;
 
-window.onload = init;
-
 function init() {
     gCurrNumCounter = 1;
     setBtnFunc();
