@@ -16,6 +16,19 @@ var msec = 0,
     timerOn = 0;
 var msecVar, secVar, minVar, hourVar;
 
+function resetTimer() {
+    stop();
+    msec = 0;
+    sec = 0;
+    min = 0;
+    hour = 0;
+    timerOn = 0;
+    document.getElementById("msec").innerHTML = "0" + msec;
+    document.getElementById("sec").innerHTML = "0" + sec;
+    document.getElementById("min").innerHTML = "0" + min;
+    document.getElementById("hour").innerHTML = "0" + hour;
+}
+
 function setMSec() {
     if (msec < 10) {
         document.getElementById("msec").innerHTML = "0" + msec;

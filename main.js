@@ -75,5 +75,6 @@ function setLevel() {
     if (this.textContent === 'Hard') gLength = 25;
     if (this.textContent === 'Extreme') gLength = 36;
     if (this.textContent === 'Super Hard') gLength = 49;
+    resetTimer();
     init();
 }
